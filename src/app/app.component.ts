@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ApexchartsComponent } from './Components/apexcharts/apexcharts.component';
 
 @Component({
   selector: 'app-root',
