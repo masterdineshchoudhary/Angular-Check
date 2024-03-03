@@ -5,8 +5,8 @@ import {
   ApexAxisChartSeries,
   ApexChart,
   ApexXAxis,
-  ApexTitleSubtitle,
-} from 'ng-apexcharts';
+  ApexTitleSubtitle 
+} from "ng-apexcharts";
 
 export type ChartOptions = {
   series: ApexAxisChartSeries;
@@ -21,37 +21,27 @@ export type ChartOptions = {
   styleUrl: './apexcharts.component.css',
 })
 export class ApexchartsComponent {
-  @ViewChild('chart') chart: ChartComponent | undefined;
+  @ViewChild("chart") chart: ChartComponent | undefined;
   public chartOptions: Partial<ChartOptions>;
 
   constructor() {
     this.chartOptions = {
       series: [
         {
-          name: 'My-series',
-          data: [10, 41, 35, 51, 49, 62, 69, 91, 148],
-        },
+          name: "My-series",
+          data: [10, 41, 35, 51, 49, 62, 69, 91, 148]
+        }
       ],
       chart: {
         height: 350,
-        type: 'bar',
+        type: "bar"
       },
       title: {
-        text: 'My First Angular Chart',
+        text: "My First Angular Chart"
       },
       xaxis: {
-        categories: [
-          'Jan',
-          'Feb',
-          'Mar',
-          'Apr',
-          'May',
-          'Jun',
-          'Jul',
-          'Aug',
-          'Sep',
-        ],
-      },
+        categories: ["Jan", "Feb",  "Mar",  "Apr",  "May",  "Jun",  "Jul",  "Aug", "Sep"]
+      }
     };
   }
 }

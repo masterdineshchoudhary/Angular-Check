@@ -1,4 +1,20 @@
-<div>
-  <app-reactive-form></app-reactive-form>
-  <app-apexcharts></app-apexcharts>
-</div>
+<ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+  <li [ngbNavItem]="1">
+    <button ngbNavLink>Reactive Forms</button>
+    <ng-template ngbNavContent>
+      <div>
+        <app-reactive-form></app-reactive-form>
+      </div>
+    </ng-template>
+  </li>
+  <li [ngbNavItem]="2">
+    <button ngbNavLink>Apex Charts</button>
+    <ng-template ngbNavContent>
+      <div>
+        <app-apexcharts></app-apexcharts>
+      </div>
+    </ng-template>
+  </li>
+</ul>
+
+<div [ngbNavOutlet]="nav" class="mt-2"></div>

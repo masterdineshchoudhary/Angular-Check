@@ -8,4 +8,5 @@ import { ApexchartsComponent } from './Components/apexcharts/apexcharts.componen
 })
 export class AppComponent {
   title = 'angular-check';
+  active = 1;
 }
